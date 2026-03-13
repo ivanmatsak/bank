@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20240321-3
+      author: developer
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: username
+                  value: "admin"
+              - column:
+                  name: password
+                  value: "$2a$10$thvegmpMTSz1UhO7G1j80.W0K7woVXCRxfb9dEX9hAm4KtPd/H0MC" # пароль 'admin'
+              - column:
+                  name: role
+                  value: "ADMIN"
